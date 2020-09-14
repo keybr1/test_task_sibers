@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List of Contacts (Sibers)</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:600|Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <button type="button" onclick="fetchData()">Load data to local storage</button>
+  <h1>All my contacts</h1>
+  <input type="text" id="myInput" onkeyup="render(false)" placeholder="Search for names.." title="Type in a name">
+  <p>Click the button to sort the list alphabetically:</p>
+  <button onclick="render(true)">Sort</button>
+  <div class="container">
+    <div>
+      <ul id="users"></ul>
+    </div>
+    <div id="userDetails">
+      <ul></ul>
+    </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
